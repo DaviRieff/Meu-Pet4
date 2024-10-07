@@ -1,6 +1,5 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_application_1/BancodeDados/user.dart';
-
 import 'package:flutter_application_1/TelasAnimais/Cachorros.dart';
 import 'package:flutter_application_1/TelasAnimais/Coelhos.dart';
 import 'package:flutter_application_1/TelasAnimais/Fur%C3%B5es.dart';
