@@ -1,4 +1,6 @@
 import 'package:flutter/material.dart';
+import 'package:flutter_application_1/BancodeDados/user.dart';
+
 import 'package:flutter_application_1/TelasAnimais/Cachorros.dart';
 import 'package:flutter_application_1/TelasAnimais/Coelhos.dart';
 import 'package:flutter_application_1/TelasAnimais/Fur%C3%B5es.dart';
@@ -30,7 +32,7 @@ class _AnimaisState extends State<Animais> {
               crossAxisAlignment: CrossAxisAlignment.start,
               children: [
                 const SizedBox(
-                  height: 32,
+                  height: 20,
                 ),
                 Image.asset(
                   "assets/Mypet.png",
@@ -51,7 +53,7 @@ class _AnimaisState extends State<Animais> {
                   ),
                 ),
                 const SizedBox(
-                  height: 26,
+                  height: 15,
                 ),
                 TextButton(
                     style: TextButton.styleFrom(
@@ -63,11 +65,11 @@ class _AnimaisState extends State<Animais> {
                               builder: (BuildContext contex) => Cachorros()));
                     },
                     child: const Text(
-                      "         Cachorros!         ",
+                      "            Cachorros!               ",
                       style: TextStyle(color: Colors.black),
                     )),
                 const SizedBox(
-                  height: 26,
+                  height: 10,
                 ),
                 TextButton(
                     style: TextButton.styleFrom(
@@ -79,11 +81,11 @@ class _AnimaisState extends State<Animais> {
                               builder: (BuildContext contex) => Gatos()));
                     },
                     child: const Text(
-                      "         Gatos!         ",
+                      "               Gatos!               ",
                       style: TextStyle(color: Colors.black),
                     )),
                 const SizedBox(
-                  height: 26,
+                  height: 15,
                 ),
                 TextButton(
                     style: TextButton.styleFrom(
@@ -95,11 +97,11 @@ class _AnimaisState extends State<Animais> {
                               builder: (BuildContext contex) => Papagaios()));
                     },
                     child: const Text(
-                      "         Papagaios!         ",
+                      "            Papagaios!               ",
                       style: TextStyle(color: Colors.black),
                     )),
                 const SizedBox(
-                  height: 26,
+                  height: 15,
                 ),
                 TextButton(
                     style: TextButton.styleFrom(
@@ -111,11 +113,11 @@ class _AnimaisState extends State<Animais> {
                               builder: (BuildContext contex) => Furoes()));
                     },
                     child: const Text(
-                      "         Furões!         ",
+                      "               Furões!               ",
                       style: TextStyle(color: Colors.black),
                     )),
                 const SizedBox(
-                  height: 26,
+                  height: 15,
                 ),
                 TextButton(
                     style: TextButton.styleFrom(
@@ -127,8 +129,29 @@ class _AnimaisState extends State<Animais> {
                               builder: (BuildContext contex) => Coelhos()));
                     },
                     child: const Text(
-                      "         Coelhos!         ",
+                      "             Coelhos!               ",
                       style: TextStyle(color: Colors.black),
+                    )),
+                const SizedBox(
+                  height: 15,
+                ),
+                ElevatedButton(
+                    style: ElevatedButton.styleFrom(
+                        shape: RoundedRectangleBorder(
+                            borderRadius: BorderRadius.circular(2)),
+                        backgroundColor: const Color.fromARGB(255, 82, 81, 81),
+                        textStyle: TextStyle(fontSize: 20)),
+                    onPressed: () {
+                      Navigator.push(
+                          context,
+                          MaterialPageRoute(
+                              builder: (BuildContext contex) => MyApp2()));
+                    },
+                    child: const Text(
+                      "                TAREFAS              ",
+                      style: TextStyle(
+                          color: Color.fromARGB(255, 255, 255, 255),
+                          fontSize: 15),
                     )),
               ],
             ),
